@@ -26,15 +26,20 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
+ANSWER: .forEach is in iterater function, a callback is used to access the items in the array in the each pass. The .map is higher lavel function that takes 2 arguements a callback and context, used for Immutability and to transform data in some way.
 
 2. Explain the difference between a callback and a higher order function.
-
+ANSWER: A callback is used to pass a parameter. A higher order function allows us to take in a function as parameter and executes a function when called with a function as the argument.
 3. What is closure?
-
+ANSWER: A closure is the combination of of a function and the enviroment where the function is decleared. A closure is used to give access to outer function scope from an inner function.
 4. Describe the four rules of the 'this' keyword.
-
+ANSWER: the four rule of the 'this' keyword are as follows:
+    Rule number One: Window/Global Object Binding - in the global scope the value of "this" will be window/console object.
+    Rule number Two: Implicit Binding - when a preceding a dot calls a function, the obeject before the dot. Used when a function recieves an object as an arguement. the context for this depends on object thats passed in.
+    Rule number Three: New binding - when we use a constructor function "this" reffers to the specific instance of that object. The specific object is created and returned by the constructor function.
+    Rule number Four: Explicit binding - we can override constructor object with .call and .apply function. When using .call or .apply method "this" is explicitly defined.
 5. Why do we need super() in an extended class?
-
+ANSWER: Super() helps with simple object inherritance. It tells a parent's constructor to assume the child's attributes.
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
 ## Instructions
